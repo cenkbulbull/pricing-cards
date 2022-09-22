@@ -1,0 +1,107 @@
+/*
+font-family: 'Work Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color:#C6C7D1 ;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color:#1C243C ;
+}
+.pricingCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+.pricingCard{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    text-align: center;
+    width: 180px;
+    height: 350px;
+    margin: 20px 0;
+    padding: 30px ;
+    background-color: transparent;
+    border: 10px solid #252f4d ;
+    border-radius: 20px;
+}
+.cardTitle{
+    margin-bottom: 10px;
+}
+.cardTitle .option{
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+.cardTitle .discSpace{
+    margin-top: 10px;
+    letter-spacing: .5px;
+}
+.cardTitle .discSpace span:nth-child(1){
+    font-size: 30px;
+}
+.cardTitle .discSpace span:nth-child(2){
+    font-size: 37px;
+}
+.cardTitle .description{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.cardTitle .btn{
+    width: 120px;
+    height: 16px;
+    padding: 13px;
+    background-color: transparent;
+    border: 1px solid #7B3BF3;
+    border-radius:9px;
+    cursor: pointer;
+    margin: 25px auto;
+    font-size: 12px;
+    letter-spacing: .5px;
+}
+.pricingCard hr{
+    width: 100%;
+    opacity: 0.1;
+}
+.cardDescription{
+    margin-top: 10px;
+    position: relative;
+}
+.cardDescription li{
+    margin-top: 10px;
+    float: left;
+    word-break:break-all;
+}
+.fa-check{
+    font-size: 20px;
+    float: left;
+}
+.cardDescription span{
+    font-size: 12px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+.active{
+    border: 10px solid #7B3BF3 ;
+}
+.activeBtn{
+    background-color:#7B3BF3 !important;
+}
+.cardTitle .btn:hover{
+    background-color:#7B3BF3 !important;
+    border: 1px solid #1C243C  ;
+    transition: .5s;
+}
